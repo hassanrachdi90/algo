@@ -1,0 +1,36 @@
+ALGORITHM algorithm_name
+VAR
+    STRING : text ;
+    STRING : CHAR ='';
+    INTEGER : Length =0 ;
+    INTEGER : Words =0 ;
+    INTEGER : Vowels =0 ;
+
+BEGIN
+    write ("Entre your Text");
+    Read (text);
+    WHILE (text [CHAR]<> '.') DO
+        Length+=1
+        IF (CHAR==' ') THEN
+            Words+=1
+        IF (CHAR=='a'or 
+                CHAR =='e'or 
+                CHAR=='i'or
+                CHAR=='o'or
+                CHAR=='u'or
+                CHAR=='y'or
+                CHAR=='A'or 
+                CHAR =='E'or 
+                CHAR=='I'or
+                CHAR=='O'or
+                CHAR=='U'or
+                CHAR=='Y') THEN
+            Vowels+=1            
+        END_IF
+    END_WHILE
+    Length+=1
+    Words+=1
+    write("Length",Length)
+    write("Words",Words)
+    write("Voweds",Voweds)
+END
